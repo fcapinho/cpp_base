@@ -41,6 +41,6 @@ add_subdirectory(${CMAKE_CURRENT_BINARY_DIR}/googletest-src
 
 # Test
 enable_testing()
-add_executable(base_test test.cpp)
+add_executable(base_test library.cpp test.cpp)
 target_link_libraries(base_test gtest_main)
 add_test(NAME base_test COMMAND base_test)
